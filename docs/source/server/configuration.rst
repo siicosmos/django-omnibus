@@ -30,6 +30,25 @@ you normally don't have to change this setting. If you want to integrate the
 omnibus web app in an existing Torndo server, feel free to alter this.
 Defaults to ``/ec``.
 
+``OMNIBUS_SERVER_SSL``
+---------------------------
+
+Activate the support for WebSocket Secure connections.
+With this option enabled you must connect with wss:// to the endpoint.
+You must also configure ``OMNIBUS_SERVER_SSL_KEY`` and ``OMNIBUS_SERVER_SSL_CERT``.
+Defaults ``False``.
+
+``OMNIBUS_SERVER_SSL_KEY``
+---------------------------
+
+Full path to the SSL key.
+The key must not be password protected.
+
+``OMNIBUS_SERVER_SSL_CERT``
+---------------------------
+
+Full path to the SSL certificate.
+
 ``OMNIBUS_DIRECTOR_ENABLED``
 ----------------------------
 
